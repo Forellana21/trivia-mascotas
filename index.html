@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> -->
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="contact_form">
+      <div id="welcomeDiv" style="text-align: center;">
+        <h1>Bienvenido a la Trivia de Mascotas</h1>
+
+        <label style="margin-bottom: 8px;">Escribe tu nombre</label>
+        <input
+          type="text"
+          id="nameInp"
+          name="question1"
+          style="border-radius: 5px; width: 410px;"
+        />
+
+        <button type="button" id="startBtn" style="margin-bottom: 5px;">
+          Empecemos!
+        </button>
+      </div>
+
+      <div id="greetingDiv" style="display: none; text-align: center;">
+        <h1 id="nameH1"></h1>
+        <button type="button" id="continueBtn" style="margin-bottom: 5px;">
+          Continuar
+        </button>
+      </div>
+
+      <div id="qstDiv1" style="display: none;">
+        <h1>1.¿Cúal es el animal más fiel?</h1>
+
+        <input type="radio" id="qst1Opt1" name="question1" value="1" />
+        <label for="qst1Opt1">Gato</label><br />
+
+        <input type="radio" id="qst1Opt2" name="question1" value="2" />
+        <label for="qst1Opt2">Perro</label><br />
+
+        <input type="radio" id="qst1Opt3" name="question1" value="3" />
+        <label for="qst1Opt3">Koala</label><br />
+
+        <br />
+
+        <button type="button" id="resultBtn1" style="margin-bottom: 5px;">
+          Responder
+        </button>
+        <button type="button" id="showBtn1" style="margin-bottom: 20px;">
+          Ver resultados
+        </button>
+      </div>
+
+      <div id="qstDiv2" style="display: none;">
+        <h1>2.¿Cúal es el animal más grande?</h1>
+
+        <input type="radio" id="qst2Opt1" name="question2" value="1" />
+        <label for="qst2Opt1">Ballena</label><br />
+
+        <input type="radio" id="qst2Opt2" name="question2" value="2" />
+        <label for="qst2Opt2">León</label><br />
+
+        <input type="radio" id="qst2Opt3" name="question2" value="3" />
+        <label for="qst2Opt3">Elefante</label><br />
+
+        <br />
+
+        <button type="button" id="resultBtn2" style="margin-bottom: 5px;">
+          Responder
+        </button>
+        <button type="button" id="showBtn2" style="margin-bottom: 20px;">
+          Ver resultados
+        </button>
+      </div>
+
+      <div id="qstDiv3" style="display: none;">
+        <h1>3.¿Cúal es el felino mas veloz?</h1>
+
+        <input type="radio" id="qst3Opt1" name="question3" value="1" />
+        <label for="qst3Opt1">Gato</label><br />
+
+        <input type="radio" id="qst3Opt2" name="question3" value="2" />
+        <label for="qst3Opt2">Tigre</label><br />
+
+        <input type="radio" id="qst3Opt3" name="question3" value="3" />
+        <label for="qst3Opt3">Guepardo</label><br />
+
+        <button type="button" id="resultBtn3">Responder</button>
+        <button type="button" id="showBtn3">Ver resultados</button>
+      </div>
+
+      <div id="resultFinal" style="display: none;">
+        <h1>Resumen</h1>
+        <p>Preguntas correctas: <span id="correctSpn"></span></p>
+        <p>Preguntas incorrectas: <span id="incorrectSpn"></span></p>
+        <button type="button" id="playAgain">Jugar otra vez</button>
+      </div>
+    </div>
+
+    <script src="logic.js"></script>
+  </body>
+</html>

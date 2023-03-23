@@ -1,0 +1,64 @@
+body {
+  background-image: url("32851.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.contact_form {
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 3px solid black;
+  width: 460px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+input {
+  background-color: #fbfbfb;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+label {
+  vertical-align: middle;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(92, 91, 91);
+  margin-bottom: 16px;
+}
+
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: #ab4493;
+  border-color: #ab4493;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
+  cursor: pointer;
+  font: bold 16px Arial, Sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: #ab4493;
+  text-align: center;
+}
